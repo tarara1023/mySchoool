@@ -1,0 +1,69 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--testng xml is a file which holds configuration of our test suites -->
+<!-- test configs -->
+<!--configuration - setting -->
+<!--same code(app) should be able to run in different servers connecting to different database -->
+<!-- in selenium we will write one code(framework) which should an easy way for to tell it to
+run on chrome or firefox on a config
+
+browser = firefox
+config file types:
+.xml
+.json
+.properties
+.ini
+.yaml
+.csv
+
+First word right after "<" called a tag
+Following things are attributes ex: name="Suite 1"
+Attributes are similar to java parameters.
+Tags have their own certain format.
+Rules like test tag can only exist inside suite tag
+
+Suite is a test suite name - ex: Smoke, Regretion
+ Test name in the suite - ex: Cart, Checkout, Login, FrontEnd
+ Group can also be called a "tag"
+ -->
+
+<suite name="Suite1">
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="test1">
+        <!-- name is like a variable
+        value is the value of the variable-->
+        <parameter name="userName" value="johnDoe"></parameter>
+        <parameter name="password" value="hardcoded"></parameter>
+
+        <parameter name="quantity" value="64"></parameter>
+        <parameter name="price" value="20.99"></parameter>
+        <parameter name="isPrime" value="true"></parameter>
+
+        <groups>
+            <define name="smokeAndChekout">
+                <include name="smoke"></include>
+                <include name="checkout"></include>
+                <include name="regression"></include>
+
+            </define>
+            <!--               <run>-->
+            <!--                   <include name="smokeAndChekout"></include>-->
+            <!--               </run>-->
+        </groups>
+        <classes>
+            <!-- give the full package and className -->
+            <class name="tests.testNG.TestNGDemo1"></class>
+            <class name="tests.testNG.TestNGDemo2"></class>
+            <class name="tests.testNG.TestNGGroupsDemo"></class>
+            <class name="tests.testNG.Parameterization"></class>
+            <class name="tests.testNG.DataProviders"></class>
+        </classes>
+    </test>
+</suite>
+        <!-- XSD is used to define the structure of xml file
+        In order to accomplish one submission for any transaction there are multiple small
+        applications perform certain and specific task and forwarding messaging
+         ahead to each other
+         Xml files should be used as a final runner where we choose which tests among our many
+         test cases we should run at given moment-->
