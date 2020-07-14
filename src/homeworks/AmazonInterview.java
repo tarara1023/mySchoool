@@ -16,7 +16,7 @@ public class AmazonInterview {
 
     public static void main(String[] args) {
 
-        String inp = "aaaafdbbbratbeeaarrrr";
+        String inp = "aaaafdbbbratbeeaarrrrttt";
         int count = 0;
         int cc = 1;
         String result = "";
