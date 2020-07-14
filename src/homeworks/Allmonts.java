@@ -14,6 +14,7 @@ public class Allmonts {
                 System.out.println(MONTHS[m]);
 
         }
+        String str = "dksg";
 
 
     }
