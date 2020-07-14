@@ -1,9 +1,8 @@
 package myextras.dataStructure_Algoritms.practice;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class Stack {
+public class Stack1 {
 /**
  * Variables
  * ArrayList
@@ -40,5 +39,15 @@ public class Stack {
 //
 //
 //}
-    
+public static void main(String[] args) {
+    Queue<String> queue = new LinkedList<>();
+    queue.poll();
+
+
+    Stack<String>
+
+
+
+
+}
 }

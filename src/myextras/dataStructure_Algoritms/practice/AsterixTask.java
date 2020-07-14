@@ -8,6 +8,7 @@ import java.util.List;
 
 public class AsterixTask {
 
+
     public static void main(String[] args) {
         List <String> arr = new ArrayList<>(Arrays.asList("this", "is", "lots", "of", "fun", "for", "every", "Java", "programmer"));
         int size = arr.size();
